@@ -34,8 +34,8 @@ export default function LandingPage() {
             Your best friend knows you better than anyone, do you know him? find
             out with the best app about our favorite furry ones.
           </p>
-          <button onClick={handleInicioClick}>
-            <Link to="/home" className="acceder_grande">
+          <button className="acceder_grande" onClick={handleInicioClick}>
+            <Link to="/home" className="acceder_grandee" >
                  Start
             </Link>
           </button>

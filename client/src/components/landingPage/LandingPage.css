@@ -128,22 +128,54 @@ main {
   max-width: 285px;
   margin: 16px 0 38px 0;
 }
+
 .acceder_grande {
   display: flex;
   gap: 10px;
   align-items: center;
-  font-family: 'Montserrat';
-  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
   font-weight: 500;
-  text-decoration: none;
+  text-decoration: none; /* Elimina el subrayado de las palabras enlace */
   color: white;
   background-color: #0084ff;
   border: none;
   border-radius: 12px;
   max-width: 400px;
-  padding: 8px 24px;
+  padding: 12px 28px;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.acceder_grande:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.acceder_grande:active {
+  transform: scale(0.95);
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.acceder_grande:focus {
+  animation: pulseAnimation 1s infinite;
+  outline: none;
+}
+
+
+.acceder_grandee {
+  color: white;
 }
 
 
@@ -244,14 +276,15 @@ main {
     font-size: 38px;
     line-height: 43px;
   }
+
   .acceder_grande {
     justify-content: center;
     gap: 15px;
     max-width: 500px;
     width: 100%;
     padding: 18px 30px 18px 30px;
+    color: aliceblue;
   }
-
 
   .div_functions {
     align-items: center;
